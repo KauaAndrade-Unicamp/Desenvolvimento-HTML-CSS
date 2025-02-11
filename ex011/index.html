@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou diminua e aumente a aba do computador
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/Foto-P.png" type="image/png">
+
+        <source media="(max-width: 1050px)" srcset="Imagens/Foto-M.png" type="image/png">
+
+        <img src="Imagens/Foto-G.png" alt="Imagem Flexivel">
+
+    </picture>
+
+    <h1>Reproduzindo Audios</h1>
+    <p>Aprendendo a trabalhar com audios</p>
+    <audio src="midia/Officers Call - The U.S. Marine Corps Band.mp3" controls autoplay></audio> 
+<!-- formatos compativeis com a tag audio MP3 WAV OGG-->
+  <br>
+    <!--Mais um metodo para colocar audio-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Officers Call - The U.S. Marine Corps Band.mp3" type="audio/mpeg">
+
+        <source src="midia/Officers Call - The U.S. Marine Corps Band.ogg" type="audio/ogg">
+
+        <source src="midia/Officers Call - The U.S. Marine Corps Band.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio</p>
+        <p>Faça o download</p>
+        <a href="midia/Officers Call - The U.S. Marine Corps Band.mp3"> clique aqui para download</a>
+
+    </audio>
+    
+
+</body>
+</html>
